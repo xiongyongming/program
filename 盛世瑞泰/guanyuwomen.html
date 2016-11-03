@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/guanyuwomen.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli head_navli1"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <div class="lietou_datu"></div>
+    <!-- 主体部分-->
+    <div class="GY_main">
+        <div>公司简介</div>
+        <p>盛世瑞泰咨询（北京）有限公司SR Consulting（Beijing）Co., Ltd. 成立于2008年，是国内领先为企业提供管理咨询服务和人力资源整体解决方案的专业公司。</p>
+        <p>
+            公司运用互联网技术革新人力资源服务，依托对人力资源行业的深入理解和经验积累，在技术研发、专业能力、运营服务等方面，保持高速发展，为企业及个人提供社保、公积金、薪酬个税、补充保险和员工福利等专业服务。为外商投资企业、中外合资企业，国有企业、上市公司、民营企业、私营企业等提供高端猎头服务、人力资源外包、猎聘服务、等人力资源解决方案。
+        </p>
+        <p>
+            为满足不同用户的使用习惯，公司打造了真正的云服务平台，PC端、移动端——微信版、IOS版、安卓版全平台运营，支持各类用户在各类场景中的应用。公司研发的”人事社”APP使用户可以随时随地办理企业及个人的人事相关业务、咨询问题，使企业及个人遇到人事的需求找“人事社”解决。
+        </p>
+        <p>
+            公司地处北京CBD核心区幸福大厦，拥有自己强大的数据库和全球人才知识网络，公司与客户密切合作，挖掘最具价值的发展机会，应对重要挑战并协助客户进行业务转型。在为客户度身定制的解决方案中，公司深刻洞察市场态势，确保客户获得可持续的竞争优势。
+        </p>
+    </div>
+    <div class="GY_main1"></div>
+    <div class="GY_main2"></div>
+    <div class="GY_main3"></div>
+    <div class="GY_main4">
+        <p>联系我们</p>
+        <div>中国北京市朝阳区东三环北路3号幸福大厦B座918室</div>
+        <div>Room 918,Building B of Lucky Tower,No.3 of Dong San Huan North Road,Beijing China</div>
+        <div class="GY_main5"></div>
+    </div>
+    <div class="GY_main6">
+        <div class="GY_main7">
+            <div class="GY_main9"></div>
+            <div class="GY_main8">点击展开</div>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+             $(".GY_main6").click(function() {
+                 $(".GY_main6").animate({height: '433px'}, 500);
+                 $(".GY_main7").css("display", "none");
+             })
+             $(".GY_main5").click(function() {
+                 $(".GY_main6").animate({height: '204px'}, 500);
+                 $(".GY_main7").css("display", "block");
+             })
+         })
+    </script>
+</body>
+</html>

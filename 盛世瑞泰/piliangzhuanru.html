@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>批量转入</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/qyygcxzxjg.css"/>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli head_navli1"><a href="denglu.html">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main-->
+    <div class="CXJG">
+        <div class="CXJG_H">
+            <div class="CXJG_Hnr">您的当前位置：个人中心-HRO-HRO查询-增减员明细</div>
+        </div>
+        <div class="CXJG_C">
+            <div class="CXJG_Cnr">
+                <div class="YGGL_con">
+                    <div class="YGGL_conr">
+                        <div class="YGGL_conrH">
+                            <div>123123</div>
+                        </div>
+                        <div class="YGGL_conrH1">
+                            <div class="YGGL_conrH1zi">人员分类：</div>
+                            <ul class="YGGL_conrH1list1" id="jump1111111111">
+                                <li><a href="grzxyggl.html">新参保</a></li>
+                                <li class="YGGL_xcb"><a href="grzxyggl.html" style="color: #fff;">转入</a></li>
+                                <li><a href="grzxyggl.html">减员</a></li>
+                            </ul>
+                            <script>
+                                (function(){
+                                    var jump=document.getElementById("jump1111111111");
+                                    var lis=jump.getElementsByTagName("li");
+                                    for(var i=0;i<lis.length;i++){
+                                        lis[i].index=i;
+                                        lis[i].onclick=function(){
+                                            sessionStorage.setItem("jump_index",this.index);
+                                        }
+                                    }
+                                })()
+                            </script>
+                            <ul class="YGGL_conrH1list2">
+                                <li class="show">
+                                    <a href="#" style="background: #00307c;color: #fff;">批量转入</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="zhuanru2.html" frameborder="0" style="width: 1206px;height:882px;margin-bottom: 40px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+</body>
+</html>

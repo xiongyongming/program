@@ -1,0 +1,98 @@
+body{
+    width: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.head{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+/*主体*/
+.main{
+    width: 100%;
+    height: 979px;
+    overflow: hidden;
+    position: relative;
+    min-width: 1200px;
+}
+.bg_img{
+    width: 300%;
+    height: 979px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.bg_img a{
+    width: 1920px;
+    height: 979px;
+    display: block;
+    float: left;
+
+}
+.bg_img a img{
+    width: 100%;
+    height: 100%;
+}
+/*center*/
+.center{
+    width: 1200px;
+    height: 263px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -131px;
+    z-index: 500;
+}
+.bg_left,.bg_right{
+    z-index: 1;
+    display: block;
+    width: 54px;
+    height: 215px;
+    background: none;
+    float: left;
+}
+.center span{
+    display: block;
+    width: 50px;
+    height: 215px;
+}
+.bg_left span{
+    background: url("../images/arrow1.png") 0 65px no-repeat;
+}
+.bg_right span{
+    background: url("../images/arrow2.png") 17px 65px no-repeat;
+}
+/*主体内容*/
+.wenzinr{
+    width: 1063px;
+    height: 215px;
+    float: left;
+    position: relative;
+}
+.wenzinr li{
+    width: 1063px;
+    height: 215px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.wenzinr1{
+    background: url("../images/wenzi1.png") 0 0 no-repeat;
+}
+.wenzinr2{
+    background: url("../images/wenzi2.png") 0 0 no-repeat;
+    top: -14%;
+    display: none;
+}.wenzinr3{
+     background: url("../images/wenzi3.png") 0 0 no-repeat;
+     left: 4%;
+     display: none;
+ }
+ /*底部*/
+.footer{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}

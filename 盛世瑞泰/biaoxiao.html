@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>报销</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/qyygcxzxjg.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <style>
+        .CXJG_Cnr2{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli head_navli1"><a href="denglu.html">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main-->
+    <div class="CXJG">
+        <div class="CXJG_H">
+            <div class="CXJG_Hnr">您的当前位置：个人中心-HRO-报销</div>
+        </div>
+        <div class="CXJG_C" style="height: 883px;">
+            <form id="jsForm">
+                <div class="CXJG_Cnr">
+                    <div class="CXJG_Cnr1">
+                        <div class="baoxiao_nr1">
+                            <div class="baoxiao_nr1L">姓名：</div>
+                            <div class="baoxiao_nr1R">
+                                <input type="text" value="" name="1"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="baoxiao_nr1">
+                            <div class="baoxiao_nr1L">身份证号码：</div>
+                            <div class="baoxiao_nr1R">
+                                <input type="text" value="" name="2"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="BXZLnr1">
+                            <div class="baoxiao_nr1">
+                                <div class="baoxiao_nr1L">报销种类：</div>
+                                <div class="baoxiao_nr1R" id="select">
+                                    <select name="type" id="hukou">
+                                        <option value="0" style="height:100px;">生育津贴报销</option>
+                                        <option value="1">医疗报销</option>
+                                        <option value="2">工伤报销</option>
+                                        <option value="3">公积金提取</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BXZLnr1" id="hideIpt" style="display: none;">
+                            <div class="baoxiao_nr1">
+                                <div class="baoxiao_nr1L">提取类型：</div>
+                                <div class="baoxiao_nr1R">
+                                    <select name="type" id="hukou2">
+                                        <option value="1" style="height:100px;">职工因购买商品房、经济适用房、合作建房、集资建房等自住住房，首次提取住房公积金时应提供哪些相关证明材料</option>
+                                        <option value="1">职工因购买二手房，首次提取住房公积金时应提供哪些相关证明材料</option>
+                                        <option value="1">职工因购买公有住宅楼房，首次提取住房公积金时应提供哪些相关证明材料</option>
+                                        <option value="1">职工因大修、翻建自住房屋，首次提取住房公积金时应提供哪些相关证明材料</option>
+                                        <option value="1">职工因自建自住住房，首次提取住房公积金时应提供哪些相关证明材料</option>
+                                        <option value="1">约定提取（因购买、建造、翻建、大修自住住房及偿还住房贷款本息等情况而办理住房公积金部分提取）</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aa">
+                        <!-- 生育津贴报销-->
+                        <div class="CXJG_Cnr2 A show">
+                            <div class="baoxiao_nr1">
+                                <div class="baoxiao_nr1L">配偶工作单位：</div>
+                                <div class="baoxiao_nr1R">
+                                    <input type="text" value="" name="3"   required data-msg-required="输入该字段"/>
+                                </div>
+                            </div>
+                            <div class="baoxiao_nr1" style="height: 65px;">
+                                <div class="baoxiao_nr1L"  style="height: 65px;">医学诊断证明：</div>
+                                <div class="fileR">
+                                    <div class="file_l_r"></div>
+                                    <div class="images">
+                                        <span class="close" data-index="0" title="删除"></span>
+                                        <img class="img" alt=""/>
+                                    </div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" name="file" class="webuploader-element-invisible fn-tinput tijiao" multiple="multiple" accept="image/*">
+                                    </div>
+                                </div>
+                                <!--<div style="position: relative;float: left;">
+                                    <img src="images/tjtupian.png" alt="提交"/>
+                                    <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                </div>-->
+                            </div>
+                            <div class="baoxiao_nr1" style="height: 65px;">
+                                <div class="baoxiao_nr1L"  style="height: 65px;">北京市生育服务证明（夫妻任何一方为本市户口就可办理：</div>
+                                <div style="position: relative;float: left;">
+                                    <img src="images/tjtupian.png" alt="提交"/>
+                                    <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                </div>
+                            </div>
+                            <div class="baoxiao_nr1" style="height: 65px;">
+                                <div class="baoxiao_nr1L"  style="height: 65px;">外地来京人员生育服务联系单（夫妻双方均为外阜户籍):</div>
+                                <div style="position: relative;float: left;">
+                                    <img src="images/tjtupian.png" alt="提交"/>
+                                    <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                </div>
+                            </div>
+                            <div class="baoxiao_nr1" style="height: 65px;">
+                                <div class="baoxiao_nr1L"  style="height: 65px;">结婚证（因流产提供）：</div>
+                                <div style="position: relative;float: left;">
+                                    <img src="images/tjtupian.png" alt="提交"/>
+                                    <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                </div>
+                            </div>
+                            <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                        </div>
+                        <!-- 医疗报销-->
+                        <div class="CXJG_Cnr2 A">
+                            <form action="#">
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">社保卡：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">收据票据：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">处方底方：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">住院费用结算单(汇总明细清单):</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">全额结算证明：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">急诊诊断证明：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                            </form>
+                        </div>
+                        <!-- 工伤报销-->
+                        <div class="CXJG_Cnr2 A">
+                            <form action="#">
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">收据票据：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">处方底方：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">检查、治疗费用明细:</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">医学诊断证明：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <div class="baoxiao_nr1" style="height: 65px;">
+                                    <div class="baoxiao_nr1L"  style="height: 65px;">急诊证明：</div>
+                                    <div style="position: relative;float: left;">
+                                        <img src="images/tjtupian.png" alt="提交"/>
+                                        <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                    </div>
+                                </div>
+                                <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                            </form>
+                        </div>
+                        <!-- 公积金提取1-->
+                        <div id="dd" class="A">
+                            <!-- 公积金提取1-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">购房合同或购房协议的原件及复印件:</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">购房发票的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                            <!-- 公积金提取2-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">房产证的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">契税完税凭证的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                            <!-- 公积金提取3-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">单位房管部分出具的购房协议或者购房证明的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">购房发票的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                            <!-- 公积金提取4-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">所属房管或物业部门的大修证明和产权证明的原件及复印件:</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">购买材料的明细发票或分摊到个人的费用发票的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                            <!-- 公积金提取5-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">规划、房管部门宅基地批复或建房批准证明文件的原件及复印件:</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">购买材料及其他施工费用的费用发票的原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                            <!-- 公积金提取6-->
+                            <div class="CXJG_Cnr2 B">
+                                <form action="#">
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">住房公积金约定提取申请书:</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">住房公积金约定提取确认表：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">身份证原件及复印件：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <div class="baoxiao_nr1" style="height: 65px;">
+                                        <div class="baoxiao_nr1L"  style="height: 65px;">提取职工本人的银行储蓄账号：</div>
+                                        <div style="position: relative;float: left;">
+                                            <img src="images/tjtupian.png" alt="提交"/>
+                                            <input type="file" value="" name="7" class="fn-tinput tijiao"/>
+                                        </div>
+                                    </div>
+                                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">完成</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        (function($){
+            $.fn.selectTab = function(o){
+                var d = {
+                    select:'select', //定义下拉对象
+                    con:'p'          //定义切换对象
+                };
+                var o = $.extend(d,o);
+                var $option = $(d.select).find('option');//遍历下拉对象下的option
+                for(var i = 0; i < $option.length; i++){
+                    $option.eq(i).attr('i',i);  //设置option 属性i从下标为0开始赋值
+                }
+                selectFn();
+                $(d.select).change(function(){
+                    selectFn(".A","#dd",".B");
+                })
+                function selectFn(obj,obj1,obj2){
+                    var selectedIndex = $(d.select).find('option:selected').attr('i'); //保存被选中的option的属性i的值
+                    $(obj).eq(selectedIndex).show().siblings().hide();
+                    $(obj1).find(obj2).eq(selectedIndex).show().siblings().hide();
+                    while(".A"){
+                        if(selectedIndex==3){
+                            $("#hideIpt").show();
+                        }else{
+                            $("#hideIpt").hide();
+                        }
+                        return;
+                    }
+                }
+            }
+        })(jQuery);
+        $(function(){
+            $().selectTab();
+        })
+
+        $(function(){
+            //jquery.validate
+            $("#jsForm").validate({
+                submitHandler: function() {
+                    window.open("baoxiaojindu.html","_self");
+                }
+            });
+
+            /*$("#hukou option").change(function(){
+                var i=$(this).index();
+                $(".CXJG_Cnr2").eq(i).show().siblings().hide();
+
+            })*/
+        })
+    </script>
+</body>
+</html>

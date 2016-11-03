@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=0.5,user-scalable=no" />
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="bg">
+		<!--logo-->
+		<div id="logo">
+			<img src="images/logo.png"/>
+		</div>
+		<img src="images/6s.png" class="first-img"/>
+		<section class="echo">
+			立马预约试驾&nbsp;<span class="here" style="right: 130px;top: 20px;"></span>
+		</section>
+		<section class="echo">
+			活动详情&nbsp;<span class="here" style="right: 160px;top: 20px;"></span>
+		</section>
+	</div>
+<script src="js/new1.js"></script>
+<script type="text/javascript">
+	var section=document.getElementsByTagName("section");
+	function clvck(obj,url){
+		obj.onclick=function(){
+			window.open(url,"_self");
+		}
+	}
+	clvck(section[0],"6nf.html");
+	clvck(section[1],"3de.html");
+</script>
+</body>
+</html>

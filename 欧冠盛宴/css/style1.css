@@ -1,0 +1,63 @@
+.bg .ipt>input{
+	width: 280px;
+	height: 50px;
+	color: #a2a2a2;
+	font-size: 30px;
+	margin-left: 185px;
+	background: none;
+	border: 0;
+	font-style: oblique;
+}
+.bg .last-img{
+	padding-top: 21px;
+}
+footer{
+	width: 504px;
+	height: 54px;
+	margin: 16px auto;
+	position: relative;
+}
+footer>p{
+	width: 258px;
+	height: 54px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	line-height: 54px;
+	font-style: oblique;
+	background: url(../images/4n.png) 0 0 no-repeat;
+	position: relative;
+}
+footer>p:nth-child(1){
+	float: left;
+}
+footer>p:nth-child(2){
+	float: right;
+	position: absolute;
+	right: 3px;
+}
+.right{
+	display: inline-block;
+	width: 19px;
+	height: 25px;
+	background: url(../images/10.png) 0 0 no-repeat;
+}
+.sub{
+	width: 440px;
+	height: 50px;
+	color: #fff;
+	font-weight: 800;
+	font-size: 33px;
+	background: none;
+	border: 0;
+	font-style: oblique;
+}
+.here2{
+	position: absolute;
+	width: 16px;
+	height: 21px;
+	top: 17px;
+	right: 50px;
+	background: url(../images/minr_07.png) 0 0 no-repeat;
+}

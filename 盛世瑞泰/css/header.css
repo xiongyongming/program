@@ -1,0 +1,217 @@
+body{
+    width: 100%;
+    overflow: hidden;
+}
+/*头部*/
+.head{
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top: 1px solid #8a8a8a;
+    z-index: 500;
+    min-width: 1200px;
+}
+.head_con{
+    width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.head_login{
+    width: 157px;
+    height: 75px;
+    background: url("../images/header_login.png") 0 13px no-repeat;
+    float: left;
+}
+.head_nav{
+    width: 600px;
+    height: 75px;
+    float: right;
+}
+.head_nav li{
+    width: 102px;
+    height: 73px;
+    float: left;
+    line-height: 73px;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.head_nav .head_nav_HT{
+    color: #e70e1e;
+    border-bottom: 2px solid #e70e1e;
+}
+/*主体*/
+.main{
+    width: 100%;
+    height: 979px;
+    overflow: hidden;
+    position: relative;
+    min-width: 1200px;
+}
+.bg_img{
+    width: 300%;
+    height: 979px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.bg_img a{
+    width: 1920px;
+    height: 979px;
+    display: block;
+    float: left;
+
+}
+.bg_img a img{
+    width: 100%;
+    height: 100%;
+}
+/*center*/
+.center{
+    width: 1200px;
+    height: 263px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -131px;
+    z-index: 500;
+}
+.bg_left,.bg_right{
+    z-index: 1;
+    display: block;
+    width: 54px;
+    height: 215px;
+    background: none;
+    float: left;
+}
+.center span{
+    display: block;
+    width: 50px;
+    height: 215px;
+}
+.bg_left span{
+    background: url("../images/arrow1.png") 0 65px no-repeat;
+}
+.bg_right span{
+    background: url("../images/arrow2.png") 17px 65px no-repeat;
+}
+/*主体内容*/
+.wenzinr{
+    width: 1063px;
+    height: 215px;
+    float: left;
+    position: relative;
+}
+.wenzinr li{
+    width: 1063px;
+    height: 215px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.wenzinr1{
+     background: url("../images/wenzi1.png") 0 0 no-repeat;
+ }
+.wenzinr2{
+    background: url("../images/wenzi2.png") 0 0 no-repeat;
+    top: -14%;
+    display: none;
+}.wenzinr3{
+     background: url("../images/wenzi3.png") 0 0 no-repeat;
+    left: 4%;
+    display: none;
+ }
+/*底部*/
+.fotter{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.fotter_con{
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+.fotter_con li{
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    color: #e9e9e9;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*电话*/
+.phone{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top: -50px;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.phone:hover{
+    overflow: hidden;
+    width: 160px;
+    padding-left: 20px;
+    background-color: rgb(288,57,42);
+}
+.phone img{
+    float: right;
+    transition: all 1s linear;
+}
+.phone:hover img{
+    width: 35px;
+    height: 35px;
+}
+/*二维码*/
+.erweima{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top: 50px;
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+}
+.erweima img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.ewmt{
+    width: 141px;
+    height: 500px;
+    position: absolute;
+    left: -145px;
+    top: -91px;
+    background: url(../images/ewm.jpg) 0 141px no-repeat;
+    overflow: hidden;
+    display: none;
+    transition: all 0.5s linear;
+}
+.ewmt:hover{
+    display: block;
+    background-position-y: 0px;
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加参保人</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<style>
+body,a{ font-size:14px; color:#666;}
+.bl-form input,button{outline: 0;background: no-repeat scroll right center transparent;border: 0px solid #000;  -webkit-appearance: none;  -moz-appearance: none;  appearance: none;}
+.fn-vhid{ visibility:hidden;}
+.fn-tinput{ width:298px; height:32px; line-height:32px\9; border:#ccc solid 1px; background-color:transparent; padding:0 6px; -webkit-border-radius: 5px;  -moz-border-radius: 5px;  border-radius: 5px;}
+textarea {border:#ddd solid 1px; background-color:transparent; width:60%}
+.bl-form ul{width: 588px;margin: 0px auto;overflow: hidden;}
+.bl-form label{ float:left; width:165px; text-align:right; padding-top:6px;}
+.bl-form .controls label{ width:auto;}
+.bl-form li{width: 588px; margin-top:20px; overflow:visible;float:left;}
+em{ color:#C00;padding-right: 15px;}
+div.error{position: absolute;}
+.controls{width: 313px;height: 32px;border: 1px solid #ccc;float: left;  -webkit-border-radius: 5px;  -moz-border-radius: 5px;  border-radius: 5px;position: relative}
+.xinming{width: 177px;}
+.bl-form-group .xinbie input{width: 0px;height: 0px;line-height: 0px;display: none;}
+.xinbie div{width: 50px;height: 38px;line-height: 38px;text-align: right;float: left;margin-left: 3px;cursor: pointer;}
+.controls .canbaodi,.hukouxingzhi{width: 150px;padding-left: 8px;height: 100%;outline: 0;border: 0px solid #000;background: no-repeat scroll right center transparent;}
+.controls input{display: block;width: 298px;height: 100%;line-height: 32px;padding-left: 15px;font-size: 14px;}
+.bl-form button{width: 178px;height:40px;background-color: #00307c;font-size: 16px;color: #fff; -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;cursor: pointer;margin: 36px 220px;}
+.bl-form-group .tijiao{background: transparent;opacity: 0;filter: alpha(opacity=0);display: block;width: 62px;height: 62px;position: absolute;left: 0px;top: 0px;}
+.xinbie img{display: none;}
+#XB{display: inline-block;}
+.XB{width: 50px;height: 38px;line-height: 38px;text-align: right;float: left;cursor: pointer;}
+.TJSQnr2_nrgail{background: url("images/step-08.png") 15px 10px no-repeat;}
+.TJSQnr2_nrboy{background: url("images/step-06.png") 10px 10px no-repeat;}
+.TJSQnr2_nrboy input,.TJSQnr2_nrgail input{display: none;}
+.TJSQnr2_nrgail2{background: url("images/step-07.png") 15px 10px no-repeat;}
+.TJSQnr2_nript2{width: 190px;}
+.info select{background:#FFFFFF;width: 68px;height: 32px;margin-top: -5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.info{ float:left;margin:5px; text-align:center;}
+.info #show{ color:#3399FF; }
+</style>
+</head>
+<body>
+    <div class="demobox" style="width: 1204px; background-color: #fafafa; border: #ccc solid 1px; margin: 0px auto;">
+	<form action="shouye2.html" method="post" class="bl-form bl-formhor" id="jsForm">
+        <ul>
+            <li class="bl-form-group">
+                <label>姓名：<em>*</em></label>
+                <div class="controls xinming">
+                    <input type="text" value="" name="0" class="fn-tinput"  required data-msg-required="输入该字段" style="width: 177px;"/>
+                </div>
+            </li>
+            <li class="bl-form-group bl-form-text">
+                <label>性别：<em>*</em></label>
+                <div id="XB">
+                    <div class="XB TJSQnr2_nrgail TJSQnr2_nrboy" id="man">
+                        <input type="radio"  value="" name="radio1"   required data-msg-required="输入该字段"/>男
+                    </div>
+                    <div class="XB TJSQnr2_nrgail" id="woman">
+                        <input type="radio"  value="" name="radio1"   required data-msg-required="输入该字段"/>女
+                    </div>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>身份证号：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="1" class="fn-tinput"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>手机号：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="2" class="fn-tinput"  required data-rule-mobile="true" data-msg-required="输入该字段" data-msg-mobile="请输入正确格式"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>参保地：<em>*</em></label>
+                <div class="info">
+                    <select id="s_province" name="s_province"></select>  
+                    <select id="s_city" name="s_city" ></select>  
+                    <select id="s_county" name="s_county" style="width: 100px;margin-left: 2px;"></select>
+                    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+                    <script type="text/javascript">_init_area();</script>
+
+                    <div id="show"></div>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>户口性质：<em>*</em></label>
+                <div class="controls">
+                    <select name="select1" class="hukouxingzhi" style="width: 313px;">
+                        <option value="1">城镇户口</option>
+                        <option value="2">农村户口</option>
+                    </select>
+                    <span for="radio1" class="error"></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>公积金基数：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="3" class="fn-tinput"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>社保基数：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="4" class="fn-tinput"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>银行卡号：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="5" class="fn-tinput"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>开户银行：<em>*</em></label>
+                <div class="controls">
+                    <input type="text" value="" name="6" class="fn-tinput" placeholder="例如：中国建设银行"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>一寸白底照片：<em>*</em></label>
+                <div style="position: relative;float: left;">
+                    <img src="images/tjtupian.png" alt="提交"/>
+                    <input type="file" value="" name="7" class="fn-tinput tijiao"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>身份证照片(正反面)：<em>*</em></label>
+                <div style="position: relative;float: left;">
+                    <img src="images/tjtupian.png" alt=""/>
+                    <input type="file" value="" name="8" class="fn-tinput tijiao"  required data-msg-required="输入该字段"/>
+                </div>
+            </li>
+            <button class="fn-btn btn-primary btn-submit submitBtn" type="submit">提交</button>
+        </ul>
+    </form>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script>
+var Gid  = document.getElementById ;
+var showArea = function(){
+    Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+            Gid('s_city').value + " - 县/区" +
+            Gid('s_county').value + "</h3>"
+}
+Gid('s_county').setAttribute('onchange','showArea()');
+
+
+$(function(){
+	$("#jsForm").validate({
+		submitHandler: function() {
+
+		}
+	})
+    $("#XB").find("div").click(function(){
+        var i=$(this).index();
+        if(i==0){
+            $("#XB").find("div").eq(0).addClass("TJSQnr2_nrboy");
+            $("#XB").find("div").eq(1).removeClass("TJSQnr2_nrgail2");
+        }else{
+            $("#XB").find("div").eq(1).addClass("TJSQnr2_nrgail2");
+            $("#XB").find("div").eq(0).removeClass("TJSQnr2_nrboy");
+        }
+    })
+
+})
+</script>
+</body>
+</html>

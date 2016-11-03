@@ -1,0 +1,171 @@
+/*头部*/
+.head{
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    border-top: 1px solid #8a8a8a;
+    z-index: 500;
+    min-width: 1200px;
+}
+.head_con{
+    width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.head_login{
+    width: 157px;
+    height: 75px;
+    background: url("../images/header_login.png") 0 13px no-repeat;
+    float: left;
+}
+.head_nav{
+    width: 600px;
+    height: 75px;
+    float: right;
+}
+.head_nav li{
+    width: 102px;
+    height: 73px;
+    float: left;
+    line-height: 73px;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.head_navli a{
+    color: #292929;
+}
+.head_nav .head_navli1{
+    color: #E4392A;
+    border-bottom: 2px solid #E4392A;
+}
+.head_navli1 a{
+    color: #E4392A;
+}
+.head_navli:hover a{
+    color: #E4392A;
+}
+.lietou_datu{
+    width: 100%;
+    height: 320px;
+    background: url("../images/chaxundatu1.png") 0 0 no-repeat;
+    min-width: 1212px;
+}
+/*底部*/
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    min-width: 1212px;
+}
+.footer_nr{
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+.footer_nr li{
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    color: #e9e9e9;
+    font-size: 16px;
+    cursor: pointer;
+}
+.footer_nrli a{
+    color: #fff;
+}
+.footer_nr li:hover{
+    color: #E4392A;
+}
+.footer_nrli a:hover{
+    color: #E4392A;
+}
+/*手机*/
+.phone{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top: -50px;
+    padding-left: 0px;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.phone div{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+.phone:hover{
+    overflow: hidden;
+    width: 160px;
+    padding-left: 20px;
+    background-color: rgb(228,57,42);
+}
+.phone:hover img{
+    animation: run 0.5s linear;
+}
+@keyframes run {
+    from{transform: scale(1,1) translate(0,0);}
+    to{transform: scale(0.7,0.7) translate(9px,-9px);}
+}
+/*二维码*/
+.erweima{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top: 50px;
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.5s linear;
+}
+.erweima:hover{
+    background: #E4392A;
+}
+.erweima:hover .erweimatu{
+    animation: move 0.5s forwards;
+    display: block;
+}
+.erweima img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 16px;
+    margin-left: 16px;
+
+}
+.erweimatu{
+    width: 146px;
+    height: 500px;
+    position: absolute;
+    left: -146px;
+    top: -180px;
+    background: url("../images/ewm.jpg") 0 141px no-repeat;
+    overflow: hidden;
+    display: none;
+}
+@keyframes move{
+    from{background-position-y: 141px;}
+    to{background-position-y: 0px;}
+}
+input,textarea{
+    outline: 0;
+    border: 0px solid #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: no-repeat scroll right center transparent;
+}

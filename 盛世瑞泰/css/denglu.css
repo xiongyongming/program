@@ -1,0 +1,228 @@
+/*µ«¬º/◊¢≤·*/
+.DL_main{
+    width: 100%;
+    background: url("../images/dl_bg.png") 0 0 no-repeat;
+    position: relative;
+    height: 1000px;
+    min-width: 1212px;
+}
+.DL_main input{
+    outline: 0;
+    border: 0px solid #000;
+    background: no-repeat scroll right center transparent;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.DL_main select,.DL_main button{
+    outline: 0;
+    appearance: none;
+    -webkit-appearance: none;
+ }
+.DL_main label{
+    display: inline-block;
+    margin-top: -15px;
+    display: none;
+}
+.DL_box{
+    width: 527px;
+    height: 438px;
+    position: absolute;
+    border: 5px solid #fff;
+    top: 50%;
+    margin-top: -219px;
+    left: 50%;
+    margin-left: -263px;
+}
+.DL_box_user{
+    width: 527px;
+    height: 90px;
+    margin-top: 12px;
+}
+.DL_box_user p{
+    width: 411px;
+    height: 28px;
+    line-height: 28px;
+    color: #e9e9e9;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.DL_box_user div{
+    width: 411px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #f3f3f3;
+    margin: 0 auto 0;
+}
+.DL_box_user input{
+    width: 401px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.DL_box_mima{
+    height: 50px;
+    width: 415px;
+    margin: 0 auto;
+}
+.DL_box_mimaL1{
+    background: url("../images/weigou.png") 0 13px no-repeat;
+}
+.DL_box_mimaL2{
+    background: url("../images/yigou.png") 0 13px no-repeat;
+}
+.DL_box_mimaL{
+    width: 150px;
+    padding-left: 22px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+}
+.DL_box_mimaL input{
+    width: 16px;
+    height: 15px;
+    margin-top: 13px;
+    margin-left: -94px;
+    z-index: 50;
+}
+.DL_box_mimaR{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #e50112;
+    float: right;
+    text-align: right;
+}
+.DL_box_mimaR a{
+    color: #e50112;
+}
+.DL_box_btn{
+    width: 210px;
+    height: 37px;
+    margin: 20px auto 0px;
+}
+.DL_box_btn input{
+    display: block;
+    width: 210px;
+    height: 37px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #e50112;
+    cursor: pointer;
+
+}
+.DL_box_zhuce{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.DL_box_zhuce a{
+    color: #e50112;
+}
+/*√‹¬Î’“ªÿ*/
+.DL_box_h{
+    width: 527px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #efefef;
+    font-size: 16px;
+    font-weight: bold;
+}
+.MA_box_yzm{
+    width: 411px;
+    height: 36px;
+    border: 0 solid #f3f3f3;
+    margin: 0 auto 0;
+}
+.MA_box_yzm input{
+    display: block;
+    width: 165px;
+    height: 36px;
+    border: 2px solid #f3f3f3;
+    float: left;
+}
+/*.MA_box_yzm img{
+    float: left;
+    margin: 12px 40px;
+}*/
+.MA_box_yzm span{
+    display: block;
+    width: 107px;
+    height: 28px;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    line-height: 36px;
+    margin-top: -38px;
+    cursor: pointer;
+}
+.MA_box_yzm span:hover{
+    color: #b21617;
+}
+/*◊¢≤·“≥*/
+.ZHUCEYE_box{
+    height: 508px;
+}
+.DL_box_user div,.DL_box_user input{
+    height: 36px;
+    line-height: 36px;
+}
+.ZCY_box_user{
+    height: 70px;
+    margin-top: 12px;
+}
+.ZCY_box_btn{
+    margin: 0 auto;
+}
+.ZCY_select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: url("../images/bai_select.png") 377px center no-repeat;
+}
+.ZCY_select option{
+    color: #666;
+}
+/*√‹¬Î’“ªÿ≥…π¶*/
+.MMZHCG_box{
+    height: 341px;
+}
+.MMZHCG_box_wenzi{
+    padding-left: 14%;
+    padding-right: 14%;
+    height: 87px;
+    color: #fff;
+    text-align: center;
+    margin-top: 95px;
+    font-size: 16px;
+}
+.MMZHCG_box input{
+    width: 390px;
+    height: 39px;
+    margin: 30px 87px;
+    background-color: #e50112;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*–ﬁ∏ƒ√‹¬Î*/
+/*—È÷§¬Î*/
+.MA_box_yzm .YZM{
+    width: 80px;
+    height: 28px;
+    margin-left: 200px;
+    border: 0;
+}

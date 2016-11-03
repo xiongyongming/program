@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=0.5,user-scalable=no" />
+	<title>获奖名单</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style2.css"/>
+</head>
+<body>
+	<div class="bg">
+		<!--logo-->
+		<div id="logo">
+			<img src="images/logo.png"/>
+		</div>
+		<img src="images/2ht.png" style="margin-top: 33px;"/>
+		<hgroup>
+			<h3>姓名</h3>
+			<h3>电话</h3>
+			<h3>奖品</h3>
+		</hgroup>
+		<div style="height:389px;overflow: hidden;" id="rebox">
+			<ul class="record" id="record">
+				
+			</ul>
+		</div>
+		<div class="e-box">
+			<span class="pan-left" id="Pan_L"><上一页</span>
+			<span class="pan-right" id="Pan_R" style="margin-left: 106px;">下一页<span>></span></span>
+		</div>
+		<section class="echo">
+			马上参与抽奖&nbsp;&nbsp;开启欧洲之旅&nbsp;<span class="here" style="right: 33px;"></span>
+		</section>
+	</div>
+<script src="js/new1.js"></script>
+<script type="text/javascript">
+	var section=document.getElementsByTagName("section")[0];
+	section.onclick=function(){
+		window.open("6nf.html","_self");
+	}
+	//ajax
+	var xhr;
+	xhr=new XMLHttpRequest();
+	xhr.open("get","data.json",true);
+	xhr.send();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4){
+			if(xhr.status==200){
+				var str=xhr.responseText;
+				var obJson=eval("("+str+")");
+				for (var i = 0; i < obJson.data.length; i++) {
+					var oli=document.createElement("li");
+					var oner=obJson.data[i]["gift"];
+					var oname=obJson.data[i]["name"];
+					var telS=obJson.data[i]["tele"];
+					telS=telS.replace(telS.substring(4,7),'***');
+					if(i<9){
+						oli.innerHTML="<div><em>0"+(i+1)+"</em>期</div><span>双人"+oner+"</span><span>"+telS+"</span><span>"+oname+"</span>";
+					}else{
+						oli.innerHTML="<div><em>"+(i+1)+"</em>期</div><span>双人"+oner+"</span><span>"+telS+"</span><span>"+oname+"</span>";
+					}
+					record.appendChild(oli);
+				}
+			}
+		}
+	}
+	//上一页，下一页
+	var rebox=document.getElementById("rebox");
+	var Pan_L=document.getElementById("Pan_L");
+	var Pan_R=document.getElementById("Pan_R");
+	Pan_R.onclick=function(){
+		rebox.scrollTop+=rebox.offsetHeight;
+		Pan_L.style.display="block";
+	}
+	Pan_L.onclick=function(){
+		rebox.scrollTop+=-rebox.offsetHeight;
+		if(rebox.scrollTop==0){
+			this.style.display="none";
+		}
+	}
+</script>
+</body>
+</html>

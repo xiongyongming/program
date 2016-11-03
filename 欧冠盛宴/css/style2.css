@@ -1,0 +1,71 @@
+.e-box{
+	height: 64px;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	background: url(../images/2hb.png) center center no-repeat;
+}
+.pan-left{
+	float: left;
+	margin-left: 165px;
+	display: none;
+}
+.pan-right{
+	float: right;
+	margin-right: 165px;
+}
+.e-box span{
+	width: 100px;
+	height: 64px;
+	line-height: 64px;
+}
+hgroup{
+	overflow: hidden;
+	margin-top: 10px;
+	padding-left: 93px;
+	margin-bottom: 10px;
+}
+hgroup h3{
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	float: left;
+	margin-left: 88px;
+}
+hgroup h3:nth-child(3){
+	margin-left: 111px;
+}
+.record{
+	margin-left: 66px;
+	width: 508px;
+	float: left;
+}
+.record>li{
+	width: 100%;
+	line-height: 40px;
+	float: left;
+}
+.record div{
+	font-size: 21px;
+	color: #fff;
+	float: left;
+	margin-right: 38px;
+}
+.record em{
+	font-size: 30px;
+	font-weight: bold;
+}
+.record li span{
+	font-size: 21px;
+	color: #fff;
+	font-style: italic;
+	float: right;
+	display: inline-block;
+	margin-right: 37px;
+}
+#record li span:nth-child(2){
+	margin-right: 0px;
+}
+#record li span:last-child{
+	float: left;
+}

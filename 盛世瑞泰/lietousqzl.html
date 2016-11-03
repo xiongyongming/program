@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>猎头-提交申请</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/lietou.css"/>
+    <link rel="stylesheet" href="css/datePicker.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.date_input.pack.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav">
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli head_navli1"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li style="width: 140px;" class="head_navli"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <div class="lietou_datu lietousq_datu"></div>
+    <!--main-->
+    <form id="jsForm">
+        <div class="TJSQ">
+            <div class="TJSQnr">
+                <div class="TJSQnr1">
+                    <div class="aa TJSQnr1_L"></div>
+                    <div class="aa TJSQnr1_R"></div>
+                </div>
+                <div class="TJSQnr2">
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>真实姓名：
+                        </div>
+                        <div class="TJSQnr2_nript">
+                            <input type="text" value="" name="1"   required data-msg-required="输入该字段"/>
+                        </div>
+                        <div id="XB">
+                            <div class="XB TJSQnr2_nrgail TJSQnr2_nrboy" id="man">
+                                <input type="radio"  value="" name="radio1"   required data-msg-required="输入该字段"/>男
+                            </div>
+                            <div class="XB TJSQnr2_nrgail" id="woman">
+                                <input type="radio"  value="" name="radio1"   required data-msg-required="输入该字段"/>女
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>出生日期：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript2">
+                            <input type="text" id="datePicker" name="2"  required data-msg-required="输入该字段"/>
+                        </div>
+                        <div class="TJSQnr2_nrRQ"></div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>手机号码：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="3"   required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>电子邮箱：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="4"   required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>学历：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="5"   required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>工作地点：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="6"   required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>公司名称：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="7" placeholder="之前公司名称"   required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr">
+                        <div class="TJSQnr2_nrzi">
+                            <sapn style="color: red;">*</sapn>职称名称：
+                        </div>
+                        <div class="TJSQnr2_nript TJSQnr2_nript3">
+                            <input type="text" value="" name="8"  placeholder="之前公司名称" required data-msg-required="输入该字段"/>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr2">
+                        <div class="TJSQnr2_nrzi" style="margin-left: 15px;">
+                            <sapn style="color: red;">*</sapn>工作经历：
+                        </div>
+                        <div class="TJSQnr2_nript4">
+                            <textarea class="textarea1" name="textarea1" required data-msg-required="输入该字段"></textarea>
+                        </div>
+                    </div>
+                    <div class="TJSQnr2_nr2" style="margin-left: 15px;">
+                        <div class="TJSQnr2_nrzi">
+                            留言板：
+                        </div>
+                        <div class="TJSQnr2_nript4 TJSQnr2_nript5" style="height: 50px;">
+                            <textarea class="textarea1" name="textarea2" required data-msg-required="输入该字段"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" id="tjsq_btn" class="tjsq_btn" value="提交申请"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            //jquery.validate
+            $("#jsForm").validate({
+                submitHandler: function() {
+                   window.open("tijiaochengong.html");
+                }
+            });
+            $.validator.setDefaults({
+                errorElement: 'div'
+            });
+
+            $('#datePicker').date_input();
+            $('#datePicker2').date_input();
+
+
+            //性别
+            $("#XB").find("div").click(function(){
+                var i=$(this).index();
+                if(i==0){
+                    $("#XB").find("div").eq(0).addClass("TJSQnr2_nrboy");
+                    $("#XB").find("div").eq(1).removeClass("TJSQnr2_nrgail2");
+                }else{
+                    $("#XB").find("div").eq(1).addClass("TJSQnr2_nrgail2");
+                    $("#XB").find("div").eq(0).removeClass("TJSQnr2_nrboy");
+                }
+            })
+
+
+        })
+    </script>
+</body>
+</html>

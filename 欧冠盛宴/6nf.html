@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=0.5,user-scalable=no" />
+	<title>怒放试驾首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+</head>
+<body>
+	<div class="bg">
+		<!--logo-->
+		<div id="logo">
+			<img src="images/logo.png"/>
+		</div>
+		<img src="images/1w.png" class="first-img"/>
+		<!--<form>-->
+			<section class="ipt">
+				<input type="text" id="name0" placeholder="填写姓名" />
+			</section>
+			<section style="margin-top: 12px;" class="ipt">
+				<input type="tel" id="tel0" placeholder="手机号码" />
+			</section>
+			<img src="images/2w.png"/ class="last-img">
+			<section class="echo">
+				<input type="submit" value="确认提交" class="sub" id="sub0" />
+				<span class="here"></span>
+			</section>
+		<!--</form>-->
+		<footer>
+			<p>活动详情<span class="here2"></span></p>
+			<p>查看获奖名单<span class="here2" style="right: 28px;"></span></p>
+		</footer>
+	</div>
+<script src="js/new1.js"></script>
+<script type="text/javascript">
+	var footer=document.getElementsByTagName("footer")[0];
+	var ps=footer.children;
+	var name0=document.getElementById("name0");
+	var tel0=document.getElementById("tel0");
+	var sub0=document.getElementById("sub0");
+	var reg1=/^[\u4e00-\u9fa5]{2,4}$/g;
+	var reg2=/^1[345678][0-9]{9}$/g;
+	function boots(obj,tar){
+		obj.onclick=function(){
+			window.open(tar,"_self");
+		}
+	}
+	boots(ps[0],"3de.html");
+	boots(ps[1],"2h.html");
+	sub0.onclick=function(){
+		if(name0.value==''||tel0.value=='') return false;
+		if(reg1.test(name0.value)){
+			if(reg2.test(tel0.value)){
+				window.open("4ti.html","_self");
+			}
+		}
+	}
+</script>
+</body>
+</html>

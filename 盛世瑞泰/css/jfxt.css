@@ -1,0 +1,92 @@
+.lietou_datu{
+    background: url("../images/chaxundatu.png") 0 0 no-repeat;
+}
+/*main*/
+.JFXTmain{
+    width: 1000px;
+    margin: 0 auto;
+}
+.JFXTmainT{
+    height: 50px;
+    line-height: 60px;
+    font-size: 13px;
+    text-align: left;
+    color: #666;
+}
+.JFXTmainC{
+    width: 600px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #2e2d2e;
+}
+.JFXTmainCl,.JFXTmainCr{
+    width: 196px;
+    height: 47px;
+}
+.JFXTmainCl{
+    float: left;
+    background: url("../images/fengexian1.png") 0 1px no-repeat;
+}
+.JFXTmainCr{
+    float: right;
+    background: url("../images/fengexian2.png") 0 1px no-repeat;
+}
+.JFXTmainCc{
+    height: 50px;
+    width: 208px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #2e2d2e;
+    float: left;
+    text-align: center;
+}
+
+.JFXTmainB{
+    width: 480px;
+    height: 240px;
+    margin: 20px auto;
+}
+.JFXTmainB{
+    width: 480px;
+    height: 240px;
+    margin: 20px auto;
+}
+.JFXTmainBt{
+    height: 88px;
+}
+.JFXTmainBt1{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+    color: #606060;
+    font-size: 16px;
+}
+.JFXTmainBt2{
+    width: 476px;
+    height: 45px;
+    border: 2px solid #d2d2d2;
+}
+.JFXTmainBt2 input{
+    width: 470px;
+    height: 45px;
+    padding: 2px 2px 2px 8px;
+    font-size: 16px;
+    color: #606060;
+}
+.JFXTmainBcx{
+    display: block;
+    width: 480px;
+    height: 49px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #00307c;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.JFXTmainB label{
+    display: none;
+}

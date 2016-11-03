@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>提交成功</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/lietou.css"/>
+    <link rel="stylesheet" href="css/datePicker.css"/>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav">
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli head_navli1"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li style="width: 140px;" class="head_navli"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <div class="lietou_datu lietousq_datu"></div>
+    <!--main-->
+    <form action="shouye2.html" id="jsForm">
+        <div class="TJSQ">
+            <div class="TJSQnr">
+                <div class="TJSQnr1">
+                    <div class="aa TJSQnr1_L1"></div>
+                    <div class="aa TJSQnr1_R1"></div>
+                </div>
+                <div class="HROsq_m2">
+                    <div class="HROsq_m2tu"></div>
+                    <div class="HROsq_m2zi">感谢您的提交，我们的某某某顾问会及时的与您联系</div>
+                    <div class="HROsq_m2zi HROsq_m2liejie">
+                        <span id="times">10</span>秒后回到<a href="lietousqzl.html">HRO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+<div class="erweima">
+    <img src="images/r_icon1.png" alt="二维码"/>
+    <div class="erweimatu"></div>
+</div>
+<script>
+    var time=null;
+    var x=10;
+    var times=document.getElementById("times");
+    time=setInterval(function(){
+        x--;
+        times.innerHTML=x;
+        if(x<=0){
+            window.open("lietousqzl.html","_self");
+        }
+    },1000);
+</script>
+</body>
+</html>

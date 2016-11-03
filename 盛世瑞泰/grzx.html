@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/grzx.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli head_navli1"><a href="denglu.html">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lietou_datu"></div>
+    <!-- main-->
+    <div class="GRZX_main">
+        <div class="GRZX_mainT">
+            <div class="GRZX_mainTL">
+                <h2>HRO</h2>
+                <h4>HRO</h4>
+            </div>
+            <div class="GRZX_mainTL GRZX_mainTR">
+                <h2>猎头</h2>
+                <h4>HEAD HUNTER</h4>
+            </div>
+        </div>
+        <div class="GRZX_mainC show">
+            <div class="GRZX_mainC1">
+                <div class="GRZX_mainC1L">
+                    <div class="GRZX_mainC1L_top">HRO操作</div>
+                    <ul class="GRZX_mainC1L_con">
+                        <li>
+                            <div class="GRZXbg1"></div>
+                            <a href="grzxyggl.html"><span class="GRZXbg11"></span></a>
+                            <p>增减员明细</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg2"></div>
+                            <a href="biaoxiao.html"><span class="GRZXbg22"></span></a>
+                            <p>报销</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg3"></div>
+                            <a href="grzxgzb1.html"><span class="GRZXbg33"></span></a>
+                            <p>工资表</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg4"></div>
+                            <a href="grzxgzb.html"><span class="GRZXbg44"></span></a>
+                            <p>上传空间</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="GRZX_mainC1R">
+                    <div class="GRZX_mainC1L_top">HRO查询</div>
+                    <ul class="GRZX_mainC1L_con">
+                        <li>
+                            <div class="GRZXbg5"></div>
+                            <a href="zengjianyuanfankui.html"><span class="GRZXbg55"></span></a>
+                            <p>增减员反馈</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg6"></div>
+                            <a href="baoxiaojindu.html"><span class="GRZXbg66"></span></a>
+                            <p>报销进度</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg7"></div>
+                            <a href="yuandongguanli.html"><span class="GRZXbg77"></span></a>
+                            <p>员工名册</p>
+                        </li>
+                        <li>
+                            <div class="GRZXbg8"></div>
+                            <a href="grzxzfmx.html"><span class="GRZXbg88"></span></a>
+                            <p>付款明细</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="GRZX_mainC">
+            <div class="GRZX_mainC1">
+                <div class="GRZX_mainC1L">
+                </div>
+                <div class="GRZX_mainC1R GRZX_mainC1R2">
+                    <div class="GRZX_mainC1R2_t1">
+                        <span>职位名：</span>
+                        <input type="text" placeholder="输入职位关键词，如:销售总监"/>
+                    </div>
+                    <input class="GRZX_mainC1R2_t2" type="button" value="提交"/>
+                    <p>招聘工具</p>
+                    <div class="GRZX_mainC1R2_t3"></div>
+                    <div class="GRZX_mainC1R2_t3 GRZX_mainC1R2_t4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            $(".GRZX_mainTL").click(function(){
+                var i=$(this).index();
+                $(".GRZX_mainTL").eq(i).removeClass("GRZX_mainTR").siblings().addClass("GRZX_mainTR");
+                $(".GRZX_mainC").eq(i).addClass("show").siblings().removeClass("show");
+            })
+        })
+    </script>
+</body>
+</html>

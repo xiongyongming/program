@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>增减员反馈</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/qyygcxzxjg.css"/>
+    <link rel="stylesheet" href="css/datePicker.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.date_input.pack.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli head_navli1"><a href="denglu.html">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main-->
+    <div class="CXJG">
+        <div class="CXJG_H">
+            <div class="CXJG_Hnr">您的当前位置：个人中心-HRO-HRO查询-增减员反馈</div>
+        </div>
+        <div class="CXJG_C">
+            <div class="CXJG_Cnr">
+                <div class="YGGL_con">
+                    <div class="YGGL_conr">
+                        <div class="YGGL_conrH">
+                            <div>123123</div>
+                        </div>
+                        <div class="YGGL_conrH1">
+                            <div class="YGGL_conrH1zi">人员分类：</div>
+                            <ul class="YGGL_conrH1list1">
+                                <li class="YGGL_xcb">新参保</li>
+                                <li>转入</li>
+                                <li>减员</li>
+                            </ul>
+                        </div>
+                        <div class="YGGL_conrC" style="padding-bottom: 600px;">
+                            <div class="YGGL_conrC_xcb">
+                                <div class="YGGL_conrC_xcbhead">
+                                    <div class="xcbhead1">选择月份：</div>
+                                    <div class="xcbhead2">
+                                        <div class="riqi">
+                                            <input type="text" value="2016-10" id="datePicker" name="2"/>
+                                        </div>
+                                    </div>
+                                    <div class="xcbhead3">查询</div>
+                                </div>
+                                <div id="table">
+                                    <table class="YGGL_conrC_xcbcon show">
+                                        <tr>
+                                            <td style="width: 67px;">姓名</td>
+                                            <td style="width: 42px;">性别</td>
+                                            <td style="width: 156px;">身份证号</td>
+                                            <td style="width: 103px;">手机号</td>
+                                            <td style="width: 89px;">户口性质</td>
+                                            <td style="width: 69px;">社保基数</td>
+                                            <td style="width: 91px;">公积金基数</td>
+                                            <td style="width: 129px;">银行卡号</td>
+                                            <td style="width: 91px;">开户银行</td>
+                                            <td style="width: 93px;">一寸白底照片</td>
+                                            <td style="width: 136px;">身份证照片</td>
+                                            <td style="width: 125px;">操作</br>每月22日之前可操作</td>
+                                        </tr>
+                                    </table>
+                                    <table class="YGGL_conrC_xcbcon">
+                                        <tr>
+                                            <td style="width: 134px;">姓名</td>
+                                            <td style="width: 113px;">性别</td>
+                                            <td style="width: 227px;">身份证号</td>
+                                            <td style="width: 168px;">手机号</td>
+                                            <td style="width: 151px;">户口性质</td>
+                                            <td style="width: 127px;">社保基数</td>
+                                            <td style="width: 147px;">公积金基数</td>
+                                            <td style="width: 128px;">操作</br>每月22日之前可操作</td>
+                                        </tr>
+                                    </table>
+                                    <table class="YGGL_conrC_xcbcon">
+                                        <tr>
+                                            <td style="width: 300px;">姓名</td>
+                                            <td style="width: 300px;">性别</td>
+                                            <td style="width: 300px;">身份证号</td>
+                                            <td style="width: 299px;">操作</br>每月22日之前可操作</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            $(".YGGL_conrH1list1").find("li").click(function(){
+                var i=$(this).index();
+                $(".YGGL_conrC").css("display","block");
+                $(".YGGL_conrH1list1").find("li").eq(i).addClass("YGGL_xcb").siblings().removeClass("YGGL_xcb");
+                $(".YGGL_conrH1list2").find("li").eq(i).addClass("show").siblings().removeClass("show");
+                $("#table").find("table").eq(i).addClass("show").siblings().removeClass("show");
+                console.log(i);
+            })
+            $('#datePicker').date_input();
+            $('#datePicker2').date_input();
+        })
+    </script>
+</body>
+</html>

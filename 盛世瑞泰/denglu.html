@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/denglu.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli head_navli1"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <form method="post" id="jsForm">
+        <div class="DL_main">
+            <div class="DL_box">
+                <div class="DL_box_user" style="margin-top: 65px;">
+                    <p>用户名/Name</p>
+                    <div>
+                        <input type="text" value="" name="1"   required data-msg-required="输入该字段"/>
+                    </div>
+                </div>
+                <div class="DL_box_user MA_box_user">
+                    <p>密码/Password</p>
+                    <div>
+                        <input type="password" value="" name="2"   required data-msg-required="输入该字段" />
+                    </div>
+                </div>
+                <div class="DL_box_mima">
+                    <div class="DL_box_mimaL DL_box_mimaL1">
+                        记住密码
+                        <input type="checkbox">
+                    </div>
+                    <div class="DL_box_mimaR">
+                        <a href="mimazhaohui.html">忘记密码？</a>
+                    </div>
+                </div>
+                <div class="DL_box_btn">
+                    <input type="submit" value="登&nbsp;&nbsp;&nbsp;录"/>
+                </div>
+                <div class="DL_box_zhuce">
+                    没有盛世瑞泰账户？
+                    <a href="mianfeizhuce.html">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            //jquery.validate
+            $("#jsForm").validate({
+                submitHandler: function() {
+                    window.open("grzx.html","_self");
+                }
+            })
+            $.validator.setDefaults({
+                errorElement:'div'
+            });
+            $(".DL_box_mimaL").toggle(function(){
+                $(".DL_box_mimaL").addClass("DL_box_mimaL2");
+            },function(){
+                $(".DL_box_mimaL").removeClass("DL_box_mimaL2");
+            })
+        })
+    </script>
+</body>
+</html>

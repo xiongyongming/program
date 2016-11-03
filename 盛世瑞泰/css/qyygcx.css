@@ -1,0 +1,74 @@
+/*²éÑ¯ÖÐÐÄ*/
+.chaxun_main{
+    width: 100%;
+    background-color: #fafafa;
+    min-width: 1212px;
+}
+.chaxun_main_tit1{
+    height: 60px;
+    line-height: 70px;
+    font-size: 18px;
+    text-align: center;
+    color: #222222;
+    font-weight: bold;
+}
+.chaxun_main_tit2{
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #e40008;
+}
+.chaxun_main_nr{
+    width: 1202px;
+    height: 552px;
+    margin: 20px auto;
+}
+.chaxun_main_nr li{
+    width: 285px;
+    height: 241px;
+    padding-top: 12px;
+    border: 1px solid #cdcdcd;
+    float: left;
+    margin-right: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.chaxun_main_nr li div{
+    width: 262px;
+    height: 147px;
+    margin: 0 auto;
+    position: relative;
+}
+.chaxun_main_nrtu1{
+    background: url("../images/chaxun_li1.png") 0 0 no-repeat;
+}
+.chaxun_main_nrtu2{
+    background: url("../images/chaxun_li2.png") 0 0 no-repeat;
+}
+.chaxun_main_nrtu3{
+    background: url("../images/chaxun_li3.png") 0 0 no-repeat;
+}
+.chaxun_main_nr .chaxun_main_nrtu4{
+    width: 567px;
+    background: url("../images/chaxun_li4.png") 0 0 no-repeat;
+}
+.chaxun_main_nr .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url("../images/lianjie.png") 0 0 no-repeat;
+}
+.chaxun_main_nr li p{
+    width: 100%;
+    height: 93px;
+    line-height: 93px;
+    color: #6b6b6b;
+    font-size: 18px;
+    text-align: center;
+}
+.chaxun_main_nrli:hover{
+    border: 1px solid #E4392A;
+}

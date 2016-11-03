@@ -1,0 +1,106 @@
+/*关于我们*/
+.lietou_datu{
+    background: url("../images/guanyuwomen.jpg") 0 0 no-repeat;
+}
+/*主体部分*/
+.GY_main{
+    width: 1195px;
+    height: 320px;
+    margin: 0 auto;
+}
+.GY_main div{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+.GY_main p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.GY_main1{
+    width: 100%;
+    height: 401px;
+    min-width: 1212px;
+    background: url("../images/gywm1.jpg") 0 0 no-repeat;
+}
+.GY_main2{
+    width: 100%;
+    height: 434px;
+    min-width: 1212px;
+    background: url("../images/gywm2.jpg") 0 0 no-repeat;
+}
+.GY_main3{
+    width: 100%;
+    height: 426px;
+    min-width: 1212px;
+    background: url("../images/gywm3.jpg") 0 0 no-repeat;
+}
+.GY_main4{
+    width: 100%;
+    height: 246px;
+    min-width: 1212px;
+    background: url("../images/gywm4.png") 0 0 no-repeat;
+    z-index: 50;
+    position: relative;
+}
+.GY_main4 p{
+    height: 75px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    line-height: 80px;
+}
+.GY_main4 div{
+    color: #666;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.GY_main4 .GY_main5{
+    height: 90px;
+    background: url("../images/gywm5.png") center center no-repeat;
+    cursor: pointer;
+}
+.GY_main6{
+    height: 204px;
+    background: url("../images/gywm6.png") center center no-repeat;
+    margin-top: -50px;
+    z-index: 1;
+    min-width: 1212px;
+}
+.GY_main7{
+    height: 204px;
+    position: relative;
+}
+.GY_main9{
+    width: 100%;
+    height: 204px;
+    background: url("../images/gywm7.png") center center no-repeat;
+    background: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+.GY_main8{
+    width: 100%;
+    height: 204px;
+    line-height: 204px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-size: 28px;
+    top: 0px;
+    z-index: 3;
+    cursor: pointer;
+}

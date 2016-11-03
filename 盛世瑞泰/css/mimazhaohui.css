@@ -1,0 +1,50 @@
+/*√‹¬Î’“ªÿ*/
+.MIMA_box{
+    height: 370px;
+    margin-top: -185px;
+}
+.MA_box_user{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+.DL_box_h{
+    width: 527px;
+    height: 80px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.MA_box_yzm{
+    width: 411px;
+    height: 36px;
+    border: 0px solid #f3f3f3;
+    margin: 0px auto 0px;
+}
+.MA_box_user .MA_box_yzm input{
+    display: block;
+    width: 165px;
+    height: 36px;
+    border: 2px solid #f3f3f3;
+    float: left;
+}
+.MA_box_yzm img{
+    float: left;
+    width: 80px;
+    height: 28px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.MA_box_yzm span{
+    display: block;
+    width: 107px;
+    height: 28px;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    line-height: 36px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 22px;
+}

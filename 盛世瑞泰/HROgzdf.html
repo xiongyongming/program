@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HRO工资代发</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/HRO.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli head_navli1"><a href="HRO.html">HRO</a></li>
+                <li style="width: 140px;" class="head_navli"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <div class="lietou_datu"></div>
+    <!-- main-->
+    <div class="HROsq_m">
+        <div class="HROsq_msb">HRO-工资代发</div>
+    </div>
+    <div class="HROsq_m1">
+        <div class="HROsq_m1nr">
+            <div class="HROsq_m1nr_H">
+                <div class="HROsq_m1nr_HL HROtab">
+                    <div class="HROsq_m1nr_HL1">个人</div>
+                    <div class="HROsq_m1nr_HL2">PERSONAL</div>
+                </div>
+                <div class="HROsq_m1nr_HR HROsq_m1nr_HRbg HROtab">
+                    <div class="HROsq_m1nr_HL1">企业</div>
+                    <div class="HROsq_m1nr_HL2">COMPANY</div>
+                </div>
+            </div>
+            <div>
+                <form  id="jsForm">
+                    <div class="HROsq_m1nr_C1">
+                        <div class="ZSXM" style="margin-top: 50px;">
+                            <div class="ZSXMl ZSXMzsxm">真实姓名：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="1"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="ZSXM">
+                            <div class="ZSXMl ZSXMsjhm">手机号码：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="2"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <input type="submit" class="TJSQ" value="提交申请"/>
+                    </div>
+                    <div class="HROsq_m1nr_C1 show">
+                        <div class="ZSXM" style="margin-top: 50px;">
+                            <div class="ZSXMl ZSXMgsmc">公司名称：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="3"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="ZSXM">
+                            <div class="ZSXMl ZSXMlxr">联系人：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="4"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="ZSXM">
+                            <div class="ZSXMl ZSXMzw">职&nbsp;&nbsp;位：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="5"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <div class="ZSXM">
+                            <div class="ZSXMl ZSXMlxdh">联系电话：</div>
+                            <div class="ZSXMr">
+                                <input type="text" value="" name="6"   required data-msg-required="输入该字段"/>
+                            </div>
+                        </div>
+                        <input type="submit" class="TJSQ" value="提交申请"/>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="HROsq_m3"></div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+<script>
+    $(function(){
+        //jquery.validate
+        $("#jsForm").validate({
+            submitHandler: function() {
+                //验证通过后 的js代码写在这里
+            }
+        })
+        $.validator.setDefaults({
+            errorElement:'div'
+        });
+
+
+        $(".HROtab").click(function(){
+            var i=$(this).index();
+            $(".HROtab").eq(i).removeClass("HROsq_m1nr_HRbg").siblings().addClass("HROsq_m1nr_HRbg");
+            $(".HROsq_m1nr_C1").eq(i).removeClass("show").siblings().addClass("show");
+        })
+    })
+
+</script>
+</body>
+</html>

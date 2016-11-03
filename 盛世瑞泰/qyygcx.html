@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>企业员工查询</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/qyygcx.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli head_navli1" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 大图-->
+    <div class="lietou_datu"></div>
+    <!-- main-->
+    <div class="chaxun_main">
+        <div class="chaxun_main_tit1">查询中心</div>
+        <div class="chaxun_main_tit2">QUERY CENTER</div>
+        <ul class="chaxun_main_nr">
+            <li class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu1"></div>
+                <p>社保缴费历史</p>
+            </li>
+            <li class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu1">
+                    <div class="mask"></div>
+                </div>
+                <p>社保中心连接</p>
+            </li>
+            <li class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu2"></div>
+                <p>公积金缴纳历史</p>
+            </li>
+            <li style="margin-right: 0px;" class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu2">
+                    <div class="mask"></div>
+                </div>
+                <p>公积金中心连接</p>
+            </li>
+            <li class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu3"></div>
+                <p>个税缴费历史</p>
+            </li>
+            <li class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu3">
+                    <div class="mask"></div>
+                </div>
+                <p>个税官网连接</p>
+            </li>
+            <li style="width: 589px;margin-right: 0px;" class="chaxun_main_nrli">
+                <div class="chaxun_main_nrtu4"></div>
+                <p>报销进度</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            $(".chaxun_main_nr").find("li").eq(0).click(function(){
+                window.open("qyygcxzxjf.html","_self");
+            })
+            $(".chaxun_main_nr").find("li").eq(2).click(function(){
+                window.open("qyygcxzxgjj.html","_self");
+            })
+            $(".chaxun_main_nr").find("li").eq(4).click(function(){
+                window.open("qygycxzxgs.html","_self");
+            })
+            $(".chaxun_main_nr").find("li").eq(6).click(function(){
+                window.open("qyygcxzxbxjd.html","_self");
+            })
+            $(".chaxun_main_nr").find("li").eq(1).click(function(){
+                window.open("http://www.bjrbj.gov.cn/csibiz/home/","_blank");
+            })
+            $(".chaxun_main_nr").find("li").eq(3).click(function(){
+                window.open("http://www.bjgjj.gov.cn/","_blank");
+            })
+            $(".chaxun_main_nr").find("li").eq(5).click(function(){
+                window.open("http://gs.tax861.gov.cn/index.htm","_blank");
+            })
+        })
+    </script>
+</body>
+</html>

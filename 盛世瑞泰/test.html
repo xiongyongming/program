@@ -1,0 +1,47 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>蚂蚁部落</title>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $.fn.selectTab = function(o){
+                var d = {
+                    select:'select', //定义下拉对象
+                    con:'p'          //定义切换对象
+                };
+                var o = $.extend(d,o);
+                var $option = $(d.select).find('option');//遍历下拉对象下的option
+                for(var i = 0; i < $option.length; i++){
+                    $option.eq(i).attr('i',i);  //设置option 属性i从下标为0开始赋值
+                }
+                selectFn();
+                $(d.select).change(function(){
+                    selectFn();
+                })
+                function selectFn(){
+                    var selectedIndex = $(d.select).find('option:selected').attr('i'); //保存被选中的option的属性i的值
+                    $(d.con).eq(selectedIndex).show().siblings(d.con).hide();       //显示对应显示的对象
+                }
+            }
+        })(jQuery);
+        $(function(){
+            $().selectTab();
+        })
+    </script>
+</head>
+<body>
+    <select name="">
+        <option value="" selected="true">选择内容1</option>
+        <option value="">选择内容2</option>
+        <option value="">选择内容3</option>
+        <option value="">选择内容4</option>
+    </select>
+    <p>要显示的内容1</p>
+    <p style="display:none;">要显示的内容2</p>
+    <p style="display:none;">要显示的内容3</p>
+    <p style="display:none;">要显示的内容4</p>
+
+</body>
+</html>

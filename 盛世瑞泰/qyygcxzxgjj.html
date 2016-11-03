@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>公积金查询</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/jfxt.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli head_navli1" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main-->
+    <form id="jsForm">
+        <div class="lietou_datu"></div>
+        <div class="JFXTmain" style="height:543px;">
+            <div class="JFXTmainT">企业员工查询中心-公积金缴费历史</div>
+            <div class="JFXTmainC">
+                <div class="JFXTmainCl"></div>
+                <div class="JFXTmainCc">社保缴费系统</div>
+                <div class="JFXTmainCr"></div>
+            </div>
+            <div class="JFXTmainB">
+                <div class="JFXTmainBt">
+                    <div class="JFXTmainBt1">企业名称</div>
+                    <div class="JFXTmainBt2">
+                        <input type="text" value="" name="1"   required data-msg-required="输入该字段"/>
+                    </div>
+                </div>
+                <div class="JFXTmainBt">
+                    <div class="JFXTmainBt1">身份证号</div>
+                    <div class="JFXTmainBt2">
+                        <input type="text" value="" name="2"   required data-msg-required="输入该字段" data-rule-number="true" data-msg-number="请输入正确的数字"  minlength="18" maxlength="18"/>
+                    </div>
+                </div>
+                <input class="JFXTmainBcx" type="submit" value="查&nbsp;&nbsp;询"/>
+            </div>
+        </div>
+    </form>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            //jquery.validate
+            $("#jsForm").validate({
+                submitHandler: function() {
+                    window.open("qyygcxzxjg.html","_self");
+                }
+            })
+            $.validator.setDefaults({
+                errorElement:'div'
+            });
+        })
+    </script>
+</body>
+</html>

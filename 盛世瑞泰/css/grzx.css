@@ -1,0 +1,214 @@
+.lietou_datu{
+    background: url("../images/Banner-05.jpg") 0 0 no-repeat;
+}
+.GRZX_main{
+    width: 1206px;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+.GRZX_mainT{
+    overflow: hidden;
+    text-align: center;
+}
+.GRZX_mainTL{
+    width: 603px;
+    float: left;
+    padding: 30px 0;
+    cursor: pointer;
+}
+.GRZX_mainTR{
+    background-color: #ccc;
+}
+.GRZX_mainTL h2{
+    font-size: 24px;
+    color: #333333;
+}
+.GRZX_mainTL h4{
+    font-size: 14px;
+    color: #e40014;
+}
+.GRZX_mainC{
+    position: relative;
+    height: 572px;
+}
+.GRZX_mainC1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.GRZX_mainC1L{
+    float: left;
+    border-right: 1px solid #eee;
+    width: 602px;
+    margin-top: 30px;
+}
+.GRZX_mainC1R{
+    float: right;
+    width: 603px;
+    margin-top: 30px;
+}
+.GRZX_mainC1L_top{
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.GRZX_mainC1L_con{
+    overflow: hidden;
+}
+.GRZX_mainC1L_con li{
+    float: left;
+    margin: 0 80px 30px 80px;
+}
+.GRZX_mainC1L_con li div,.GRZX_mainC1L_con li span{
+    display: block;
+    width: 136px;
+    height: 136px;
+    margin-bottom: 30px;
+}
+.GRZX_mainC1L_con li p{
+    font-size: 14px;
+    text-align: center;
+}
+.GRZX_mainC1L_con li:hover{
+    color: red;
+}
+/*.GRZX_mainC1L_con li:hover div{
+    animation: change 0.5s forwards;
+}
+@keyframes change {
+    from{background: url("../images/zengj2.png") 0 0 no-repeat;}
+    to{background: url("../images/zengj1.png") 0 0 no-repeat;}
+}*/
+.GRZX_mainC1L_con li:hover a{
+    display: block;
+}
+.GRZX_mainC1L_con li a{
+    margin-top: -166px;
+    display: none;
+}
+.GRZXbg1{
+    background: url("../images/zengj2.png") 0 0 no-repeat;
+}
+.GRZXbg11{
+    background: url("../images/zengj1.png") 0 0 no-repeat;
+}
+.GRZXbg2{
+    background: url("../images/baoxiao2.png") 0 0 no-repeat;
+}
+.GRZXbg22{
+    background: url("../images/baoxiao1.png") 0 0 no-repeat;
+}
+.GRZXbg3{
+    background: url("../images/gongzi2.png") 0 0 no-repeat;
+}
+.GRZXbg33{
+    background: url("../images/gongzi1.png") 0 0 no-repeat;
+}
+.GRZXbg4{
+    background: url("../images/kongjian2.png") 0 0 no-repeat;
+}
+.GRZXbg44{
+    background: url("../images/kongjian1.png") 0 0 no-repeat;
+}
+.GRZXbg5{
+    background: url("../images/zj2.png") 0 0 no-repeat;
+}
+.GRZXbg55{
+    background: url("../images/zj1.png") 0 0 no-repeat;
+}
+.GRZXbg6{
+    background: url("../images/jd2.png") 0 0 no-repeat;
+}
+.GRZXbg66{
+    background: url("../images/jd1.png") 0 0 no-repeat;
+}
+.GRZXbg7{
+    background: url("../images/mc2.png") 0 0 no-repeat;
+}
+.GRZXbg77{
+    background: url("../images/mc1.png") 0 0 no-repeat;
+}
+.GRZXbg8{
+    background: url("../images/mx2.png") 0 0 no-repeat;
+}
+.GRZXbg88{
+    background: url("../images/mx1.png") 0 0 no-repeat;
+}
+/*¡‘Õ∑*/
+.GRZX_mainC1R2{
+    padding: 0px 22px 0px 45px;
+    float: right;
+    width: 514px;
+    overflow: hidden;
+}
+.GRZX_mainC1R2_t1{
+    width: 512px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #2c5392;
+    overflow: hidden;
+}
+.GRZX_mainC1R2_t1 span{
+    float: left;
+    width: 83px;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #c5c5c5;
+}
+.GRZX_mainC1R2_t1 input{
+    float: left;
+    width: 410px;
+    height: 30px;
+    margin-left: 10px;
+}
+.GRZX_mainC1R2_t2{
+    width: 155px;
+    height: 40px;
+    float: right;
+    color: #fff;
+    background: url("../images/tijiao.png") 34px 8px no-repeat;
+    background-color: #00307c;
+    margin-top: 15px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.GRZX_mainC1R2 p{
+    width: 514px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    background: #eee;
+    float: right;
+    color: #666;
+    margin-top: 15px;
+}
+.GRZX_mainC1R2_t3{
+    width: 514px;
+    height: 173px;
+    float: right;
+    margin-top: 10px;
+    border: 2px solid #d1d1d1;
+    cursor: pointer;
+    background: url("../images/div1.png") 0 0 no-repeat;
+}
+.GRZX_mainC1R2_t3{
+    border-color: rgb(204,204,204);
+}
+.GRZX_mainC1R2_t4{
+    background: url("../images/div2.png") 0 0 no-repeat;
+}
+.GRZX_mainC1R2_t3:hover{
+    border-color: rgb(228,0,6);
+}
+.GRZX_mainC{
+    display: none;
+}
+.GRZX_main .show{
+    display: block;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/buju.css"/>
+    <link rel="stylesheet" href="css/shouye.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head_con">
+            <div class="head_login"></div>
+            <ul class="head_nav" >
+                <li class="head_nav_HT head_navli head_navli1"><a href="shouye2.html">首页</a></li>
+                <li class="head_navli"><a href="lietou.html">猎头</a></li>
+                <li class="head_navli"><a href="HRO.html">HRO</a></li>
+                <li class="head_navli" style="width: 140px;"><a href="qyygcx.html">企业员工查询中心</a></li>
+                <li class="head_navli"><a href="denglu.html">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主体 -->
+    <div class="main">
+        <div class="bg_img">
+            <a href="#">
+                <img src="images/banner0.png" alt="图片"/>
+            </a>
+            <a href="#">
+                <img src="images/banner0.png" alt="图片"/>
+            </a>
+            <a href="#">
+                <img src="images/banner0.png" alt="图片"/>
+            </a>
+        </div>
+        <div class="center">
+            <a href="#" class="bg_left">
+                <span></span>
+            </a>
+            <ul class="wenzinr">
+                <li class="wenzinr1"></li>
+                <li class="wenzinr2"></li>
+                <li class="wenzinr3"></li>
+            </ul>
+            <a href="#" class="bg_right">
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="footer">
+        <ul class="footer_nr">
+            <li class="footer_nrli"><a href="guanyuwomen.html">关于我们</a></li>
+            <li style="width: 200px;">电话 4000-390-903</li>
+        </ul>
+    </div>
+    <!-- 手机-->
+    <div class="phone">
+        <div>
+            <img src="images/side_icon03.png" alt="手机"/>
+        </div>
+        4000-390-903
+    </div>
+    <!-- 二维码-->
+    <div class="erweima">
+        <img src="images/r_icon1.png" alt="二维码"/>
+        <div class="erweimatu"></div>
+    </div>
+    <script>
+        $(function(){
+            setTimeout(function(){
+                $('.wenzinr .wenzinr1').fadeIn(1000);
+            },500)
+            var x=0;
+            var imgLength=$(".bg_img a").length;
+            var ctWidth=imgLength*100;
+            var itemWidth=1/imgLength*100;
+            var dWidth=document.body.offsetWidth;
+            var dHeight=$(window).height();
+            $('.main').height(dHeight);
+            $('.bg_img').width(ctWidth+"%");
+            $('.bg_img').height(dHeight);
+            $('.bg_img a').width(dWidth);
+            $('.bg_img a').height(dHeight);
+            $(".bg_left span").click(function(){
+                if(x==imgLength-1){
+                    var ctPosit=(x+1)*100;
+                    $(".main").append($(".bg_img").clone());
+                    $(".bg_img:last").css("left","100%");
+                    $(".bg_img:first").animate({
+                        "left":"-"+ctPosit+"%"
+                    },1000);
+                    $(".bg_img:last").animate({
+                        "left":"0"
+                    },1000);
+                    var setTime0=setTimeout(function(){
+                        $(".main .bg_img:first").remove();
+                    },1000);
+                    x=0;
+                    $(".wenzinr li").eq(x-1).fadeOut();
+                    setTimeout(function(){
+                        $(".wenzinr li").eq(x).fadeIn()
+                    },1000);
+                }else{
+                    x++;
+                    var ctPosit=x*100;
+                    $(".bg_img").animate({
+                        "left":"-"+ctPosit+"%"
+                    },1000);
+                    $(".wenzinr li").eq(x-1).fadeOut();
+                    setTimeout(function(){
+                        $(".wenzinr li").eq(x).fadeIn()
+                    },1000);
+                }
+            })
+            $(".bg_right span").click(function(){
+                if(x==0){
+                    var stPosit=imgLength*100;
+                    var etPosit=(imgLength-1)*100;
+                    $(".main").prepend($(".bg_img").clone());
+                    $(".bg_img:first").css("left","-"+stPosit+"%");
+                    $(".bg_img:last").animate({
+                        "left":"100%"
+                    },1000);
+                    $(".bg_img:first").animate({
+                        "left":"-"+etPosit+"%"
+                    },1000);
+                    var setTime0=setTimeout(function(){
+                        $(".main .bg_img:last").remove();
+                    },1000);
+                    x=imgLength-1;
+                    $(".wenzinr li").fadeOut();
+                    setTimeout(function(){
+                        $(".wenzinr li").eq(x).fadeIn()
+                    },1000);
+                }else{
+                    x--;
+                    var ctPosit=x*100;
+                    $(".bg_img").animate({
+                        "left":"-"+ctPosit+"%"
+                    },1000);
+                    $(".wenzinr li").fadeOut();
+                    setTimeout(function(){
+                        $(".wenzinr li").eq(x).fadeIn()
+                    },1000)
+                }
+            })
+            function rollEnvent() {
+                if (x == imgLength - 1) {
+                    var ctPosit = (x + 1) * 100;
+                    $(".main").append($(".bg_img").clone());
+                    $(".bg_img:last").css("left", "100%");
+                    $(".bg_img:first").animate({
+                        "left" : "-" + ctPosit + "%"
+                    }, 1000);
+                    $(".bg_img:last").animate({
+                        "left" : "0"
+                    }, 1000);
+                    var setTime0 = setTimeout(function() {
+                        $(".main .bg_img:first").remove();
+                    }, 1000);
+                    n = 0;
+                    $(".wenzinr li").eq(n - 1).fadeOut();
+                    setTimeout(function() {
+                        $(".wenzinr li").eq(n).fadeIn()
+                    }, 1000);
+                } else {
+                    x++;
+                    var ctPosit = x * 100;
+                    $(".bg_img").animate({
+                        "left" : "-" + ctPosit + "%"
+                    }, 1000);
+                    $(".wenzinr li").eq(x - 1).fadeOut();
+                    setTimeout(function() {
+                        $(".wenzinr li").eq(x).fadeIn()
+                    }, 1000);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
